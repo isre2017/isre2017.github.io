@@ -129,7 +129,9 @@ table, table.u-full-width, form {
 	margin-left: 20px;
 }
 
-
+.sponsor {
+	height: 90px;
+}
 
 
 
@@ -138,7 +140,35 @@ footer {
 	text-align: center;
 	padding: 2rem;
 	font-size: 1.2rem	;
-	height: 100px;
 	background-color: #323232;
 	color: #a0a0a0;
 }
+
+footer img {
+	opacity: .5;
+	margin: 0px 10px 20px 10px;
+}
+
+footer a:hover {
+	opacity: 1.0;
+}
+
+footer img:hover {
+	opacity: 1.0;
+}
+
+img#twitter {
+	height: 30px;
+}
+
+img#facebook {
+	height: 30px;
+}
+
+#footerimg {
+	display:inline-block;
+}
+
+
+
+
