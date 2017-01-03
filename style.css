@@ -4,12 +4,12 @@ body {
 	font-family: 'Source Sans Pro', helvetica, sans-serif;
 }
 
+
+
 #content {
-	height: 100%;
 	min-height: 500px;
 	padding: 2rem 2rem 4rem 2rem;
 	background: rgba(255, 255, 255, .9);
-;
 }
 
 
@@ -133,10 +133,22 @@ table, table.u-full-width, form {
 	height: 90px;
 }
 
+.bio {
+	margin-bottom: 3rem;
+}
+
+.biotext p {
+	margin: 0;
+}
+
+.biotext em {
+	font-style: italic;
+}
 
 
 /* FOOTER */
 footer {
+	bottom: 0;
 	text-align: center;
 	padding: 2rem;
 	font-size: 1.2rem	;
