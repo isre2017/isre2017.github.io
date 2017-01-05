@@ -13,6 +13,9 @@ body {
 }
 
 
+/* TYPOGRAPHY */
+
+
 
 
 /* HEADER */
@@ -145,6 +148,22 @@ table, table.u-full-width, form {
 	font-style: italic;
 }
 
+#googlemap {
+	height: 325px;
+	width: 360px;
+}
+
+#hotelphoto {
+	width: 100%;
+}
+
+#hotel {
+	font-size: 1.2rem;
+}
+
+strong {
+	font-weight: bold;
+}
 
 /* FOOTER */
 footer {
