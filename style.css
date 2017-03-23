@@ -165,6 +165,14 @@ strong {
 	font-weight: bold;
 }
 
+#registration_form, #payment {
+	margin-top: 10rem;
+}
+
+#payment {
+	display:none;
+}
+
 /* FOOTER */
 footer {
 	bottom: 0;
