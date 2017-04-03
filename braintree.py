@@ -1,16 +1,17 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Mar  3 12:44:15 2017
+from sklearn import svm
+from sklearn import datasets
 
-@author: joshwondra
-"""
+clf = svm.SVC()
+iris = datasets.load_iris()
+X, y = iris.data, iris.target
 
-import braintree
+clf.fit(X, y)
 
-braintree.Configuration.configure(braintree.Environment.Sandbox,
-                                  merchant_id="7wfykfkzpwbst25r",
-                                  public_key="53fdkhmwbjptx4xj",
-                                  private_key="fb816bd31f23482e6f31019a5a1325a5")
+import pickle
+s = pickle.dumps(clf)
+clf2 = pickle.loads(s)
+print(clf2.predict(X[0:1]))
+print(y[3])
 
-client_token = braintree.ClientToken.generate()
+import os
+print(os.getcwd())
