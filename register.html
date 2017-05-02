@@ -48,6 +48,26 @@
 		
 		<p>To register, complete the form below. Please direct questions about online registration to Josh Wondra at <a href = "mailto:jdwondra@umich.edu">jdwondra@umich.edu</a>.</p>
 		
+	</div>
+	
+	<div class = "row" id = "banquetguests">
+		<h2>Banquet Guests</h2>
+		
+		<p>Attendees may bring guests to the conference banquet for $100 per guest.</p>
+		
+		<p><strong>If you are registering from outside the USA</strong>, please contact Sandy Vaughn from the Olin Business School at svaughn@wustl.edu and she will provide you with a secure link to pay for guests via credit card</p>
+		
+		<p><strong>If you are registering from inside the USA</strong>, you may use the button below to pay for banquet guests</p>
+		
+		<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+								<input type="hidden" name="cmd" value="_s-xclick">
+								<input type="hidden" name="hosted_button_id" value="WP8ZR5GVATE9A">
+								<input type='submit' name = "submit" value='Pay for a Banquet Guest'/>
+		</form>
+
+	</div>
+						
+	<div class = "row" id = "regfee">	
 	<h2>Registration Fee</h2>
 	<table class = "u-full-width">
 		<thead>
@@ -82,9 +102,9 @@
 			</tr>
 		</tbody>
 	</table>
-</div>
+	</div>
 	
-<div class = "row" id = 'registration_form'>
+	<div class = "row" id = 'registration_form'>
 	<h1>Step 1: Submit Your Information</h1>
     <form name = 'registration' id='foo' method = 'post' action = 'emial.php'>
       <p>
@@ -113,11 +133,16 @@
       <div id='success'></div>
       <button type='submit'>Submit for Step 2: Payment</button>
     </form>
-</div>
+	</div>
 
-<div class = "row" id = 'payment'>
+	<div class = "row" id = 'payment'>
 	<h1>Step 2: Payment</h1>
 	<p>You have successfully submitted your information to register for ISRE 2017. After you successfully pay the conference fee, your registration will be complete.</p>
+
+		<p><strong>If you are registering from outside the USA</strong>, please contact Sandy Vaughn from the Olin Business School at svaughn@wustl.edu and she will provide you with a secure link to pay via credit card.</p>
+	
+		<p><strong>If you are registering from inside the USA</strong>, please use the button below to submit your payment.</p> 
+	
 	<table class = "u-full-width">
 		<thead>
 			<tr>
@@ -144,8 +169,8 @@
 	</table>
 	<br />
 	<p>For those who cannot use Paypal to pay the registration fee, please contact Sandy Vaughn from the Olin Business School at svaughn@wustl.edu and she will provide you with a secure link to pay via credit card.</p>
-	
-</div>
+		
+	</div>
 
 
 
