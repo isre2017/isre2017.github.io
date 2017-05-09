@@ -216,5 +216,9 @@ img#facebook {
 	margin: 5rem 0;
 }
 
+sup {
+	vertical-align: super;
+	font-size: 50%;
+}
 
 
