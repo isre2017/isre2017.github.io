@@ -69,26 +69,26 @@ $("#foo").submit(function(event){
 			$('#payment_type').html('<td>Regular Member</td>');
 			$('#early_cost').html('<td>335</td>');
 			$('#late_cost').html('<td>385</td>');
-			$('#paypal_code').val('UT5N2BQJFCKVC');
-			// $('#paypal_code').val('A4V6F4DK8WTWJ')    FOR LATE REGISTRATION
+			// $('#paypal_code').val('UT5N2BQJFCKVC');
+			$('#paypal_code').val('A4V6F4DK8WTWJ')    
 		} else if (reg_type == 'Regular Non-Member') {
 			$('#payment_type').html('<td>Regular Non-Member</td>');
 			$('#early_cost').html('<td>410</td>');
 			$('#late_cost').html('<td>460</td>');		
-			$('#paypal_code').val('6GB5V54UM4PFW');
-			// $('#paypal_code').val('8892EFBVMXSGE')    FOR LATE REGISTRATION	
+			// $('#paypal_code').val('6GB5V54UM4PFW');
+			$('#paypal_code').val('8892EFBVMXSGE')    
 		} else if (reg_type == 'Student/Postdoc Member') {
 			$('#payment_type').html('<td>Student/Postdoc Member</td>');
 			$('#early_cost').html('<td>285</td>');
 			$('#late_cost').html('<td>335</td>');		
-			$('#paypal_code').val('QTEE2RU8U9T6Y');	
-			// $('#paypal_code').val('6PRXNUKP4KFNE')    FOR LATE REGISTRATION	
+			// $('#paypal_code').val('QTEE2RU8U9T6Y');	
+			$('#paypal_code').val('6PRXNUKP4KFNE')    
 		} else if (reg_type == 'Student/Postdoc Non-Member') {
 			$('#payment_type').html('<td>Student/Postdoc Non-Member</td>');
 			$('#early_cost').html('<td>310</td>');
 			$('#late_cost').html('<td>360</td>');	
-			$('#paypal_code').val('9DCZE3ZJD8LHY');
-			// $('#paypal_code').val('DRKNQZ76HHG7G')    FOR LATE REGISTRATION	
+			// $('#paypal_code').val('9DCZE3ZJD8LHY');
+			$('#paypal_code').val('DRKNQZ76HHG7G')    
 					
 		}
 		$('#payment').css('display', 'block');
