@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+
+<head>
+
+	<meta charset = "UTF-8">
+	<title>ISRE 2017</title>
+	
+	<link rel = "stylesheet" href = "reset.css">
+	<link rel = "stylesheet" href = "skeleton.css">
+	<link rel = "stylesheet" href = "style.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+	<link rel="shortcut icon" href="favicon.ico" />
+	
+</head>
+
+<body>
+<div class = 'container'>
+
+	<header>
+	<div class = 'row'>
+		<a href = "index.html"><img class = 'three columns' id = 'logo' src = 'isre2017_2.jpg' alt = "" /></a>
+		
+		<nav class = 'nine columns'>
+			<a href = "index.html">Home</a>
+			<a href = "about.html">About Us</a>
+			<a href = "submit.html">Submit</a>
+			<a class = "currpage" href = "register.html">Register</a>
+			<a href = "program.html">Program</a>
+			<a href = "travel.html">Travel/Accomodations</a>
+		</nav>
+	</div>
+	</header>
+	
+	
+	
+	
+	<div id = "content">
+		
+	<div class = "row">	
+		<h1>Registration Information</h1>
+		<p>This page is for presenters of late-breaking research submissions to register for ISRE 2017</p>
+		
+		<p>To register, complete the form below. Please direct questions about online registration to Josh Wondra at <a href = "mailto:jdwondra@umich.edu">jdwondra@umich.edu</a>.</p>
+		
+		<p>Please support ISRE by staying in the conference hotel, the Chase Park Plaza.  The society will pay a fine if we do not have a certain number of rooms, and we appreciate your consideration when you make your choice of accommodation. See the <a href="http://isre2017.org/travel.html">Travel/Accomodations</a> page for details and the conference rate.</p>
+
+		<p>As a special gesture of support to our early-stage members, we are offering FREE CONFERENCE REGISTRATION to DOCTORAL STUDENTS and POST-DOCTORAL RESEARCHERS who stay at least 3 nights in their own room at the Chase Park Plaza. If two students/postdocs share a room for at least 4 nights, one will receive free registration and the other will receive half off registration.  You can request a double room, and roll-away beds can be added to a room at no charge. <small>After the conference, send us a copy of your hotel bill and your registration will be refunded. Shared rooms must have the names of both registed attendees on the bill. Refund forms will be available at the registration.</small></p>
+
+		<p>To facilitate room shares for all attendees, we have established <a href = "https://docs.google.com/spreadsheets/d/1ecdgiqBzgQU59PWWFMRLUYT4yVtwuAf0WzjXZf51jro/edit?usp=sharing">a page for individuals to find others who are interested in sharing.</a></p>
+		
+	</div>
+	
+	<div class = "row" id = "banquetguests">
+		<h2>Meet the Editors Preconference</h2>
+		<p>There will be a <a href="preconference.pdf">Meet the Editors preconference</a> on Wednesday, July 26. Registration information for the preconference will be available soon.</p>
+	</div>
+	
+	<div class = "row" id = "banquetguests">
+		<h2>Banquet Guests</h2>
+		
+		<p>Attendees may bring guests to the conference banquet for $100 per guest.</p>
+		
+		<p><strong>If you are registering from outside the USA</strong>, please contact Sandy Vaughn from the Olin Business School at svaughn@wustl.edu and she will provide you with a secure link to pay for guests via credit card</p>
+		
+		<p><strong>If you are registering from inside the USA</strong>, you may use the button below to pay for banquet guests</p>
+		
+		<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+								<input type="hidden" name="cmd" value="_s-xclick">
+								<input type="hidden" name="hosted_button_id" value="WP8ZR5GVATE9A">
+								<input type='submit' name = "submit" value='Pay for a Banquet Guest'/>
+		</form>
+
+	</div>
+						
+	<div class = "row" id = "regfee">	
+	<h2>Registration Fee</h2>
+	<table class = "u-full-width">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Early registration <br />(until June 1)</th>
+				<th>Normal registration <br />(after June 1)</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Regular Members</td>
+				<td id = "regmem_early_cost">335 USD</td>
+				<td id = "regmem_late_cost">385 USD</td>
+
+			</tr>
+			<tr>
+				<td>Regular Non-Members</td>
+				<td id = "regnon_early_cost">410 USD</td>
+				<td id = "regnon_late_cost">460 USD</td>
+			</tr>
+			<tr>
+				<td>Student/Postdoc Members</td>
+				<td id = "studmem_early_cost">285 USD</td>
+				<td id = "studmem_late_cost">335 USD</td>
+			</tr>
+			<tr>
+				<td>Student/Postdoc Non-Members</td>
+				<td id = "studnon_early_cost">310 USD</td>
+				<td id = "studnon_late_cost">360 USD</td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+	
+	<div class = "row" id = 'registration_form'>
+	<h1>Step 1: Submit Your Information</h1>
+    <form name = 'registration' id='foo' method = 'post'>
+      <p>
+        <label>Name as it should appear on your conference badge</label>
+        <input id='name' name='name' type='text'>
+      </p>
+	  <p>
+        <label>Email Address</label>
+        <input id='email' name='email' type='email'>
+      </p>
+	  <p>
+        <label>Institution</label>
+        <input id='institution' name='institution' type='text'>
+      </p>
+	  <p>
+        <label>Location of Institution</label>
+        <input id='location' name='location' type='text'>
+      </p>
+	  <p>
+        <label>Registration Type</label>
+        <input id='registration_type' name='registration_type' type='radio' value = 'Regular Member'> Regular Member<br />
+        <input id='registration_type' name='registration_type' type='radio' value = 'Regular Non-Member'> Regular Non-Member<br />
+        <input id='registration_type' name='registration_type' type='radio' value = 'Student/Postdoc Member'> Student/Postdoc Member<br />
+        <input id='registration_type' name='registration_type' type='radio' value = 'Student/Postdoc Non-Member'> Student/Postdoc Non-Member<br />
+      </p>
+      <div id='success'></div>
+      <button type='submit'>Submit for Step 2: Payment</button>
+    </form>
+	</div>
+
+	<div class = "row" id = 'payment'>
+	<h1>Step 2: Payment</h1>
+	<p>You have successfully submitted your information to register for ISRE 2017. After you successfully pay the conference fee, your registration will be complete.</p>
+
+		<p><strong>If you are registering from outside the USA</strong>, please contact Sandy Vaughn from the Olin Business School at svaughn@wustl.edu and she will provide you with a secure link to pay via credit card.</p>
+	
+		<p><strong>If you are registering from inside the USA</strong>, please use the button below to submit your payment.</p> 
+	
+	<table class = "u-full-width">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Early registration <br />(until June 1)</th>
+				<th>Normal registration <br />(after June 1)</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td id = "payment_type"></td>
+				<td id = "early_cost"></td>
+				<td id = "late_cost"></td>	
+				<td>
+						<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" id = 'paypal_code' value="">
+							<input type='submit' name = "submit" value='Pay' />
+						</form>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br />
+	<p>For those who cannot use Paypal to pay the registration fee, please contact Sandy Vaughn from the Olin Business School at svaughn@wustl.edu and she will provide you with a secure link to pay via credit card.</p>
+		
+	</div>
+
+
+
+
+	
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src='google-sheet2.js'></script>
+
+</div>
+
+
+
+
+
+</div>
+
+	<footer>
+		<p>&copy; <a href = 'http://www.isre.org'>International Society for Research on Emotion</a>, 2016-2017</p>
+		<div id = "footerimg">
+			<a href = ""><img id = "twitter" src = "twitter.png" alt = "Link to Twitter page"></a>
+			<a href = "https://www.facebook.com/IsreOrg/"><img id = "facebook" src = "fb.png" alt = "Link to Facebook page"></a>
+		</div>
+	</footer>
+
+<script src="https://www.2checkout.com/static/checkout/javascript/direct.min.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>
+
