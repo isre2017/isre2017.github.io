@@ -241,6 +241,8 @@ small {
 .confthumb {
 	border: 1px solid grey;
 	margin-bottom: 6rem;
+	width:282px;
+	height:188px;
 }
 
 .confthumb:hover {
