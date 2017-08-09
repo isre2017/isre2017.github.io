@@ -29,10 +29,13 @@
 		<nav class = "nine columns">
 			<a class = "currpage" href = "index.html">Home</a>
 			<a href = "about.html">About Us</a>
-			<a href = "submit.html">Submit</a>
+<!--			<a href = "submit.html">Submit</a>
 			<a href = "register.html">Register</a>
+-->
 			<a href = "program.html">Program</a>
+<!--
 			<a href = "travel.html">Travel/Accomodations</a>
+-->
 		</nav>
 	</div>
 	</header>
@@ -46,13 +49,15 @@
 				<!--
 				<p><a href = "submit.html">Submit Abstract <br />by Jan. 10, 2017</a></p>
 			    -->
+				<!--
 				<p><a href = "register.html">Register</a></p>
-				
+				-->
+				<p>Thanks for a <br />great conference!</p>
 			</div>
 		</div>
 		
 	<div id = "content">
-			
+<!--	
 		<p>The biennial conference of the <a href = "http://www.isre.org">International Society for Research on Emotion</a> brings together researchers from all the disciplines involved in the study of emotion from all over the world to meet and share their work. Come to ISRE 2017 to learn the state-of-the-art in emotion research.</p>
 
 		<p>As an emotion researcher&mdash;whether from the humanities, the social sciences, the behavioral and brain sciences, or any other domain&mdash;ISRE 2017 awaits you. We look forward to seeing you in St. Louis this July!</p>
@@ -75,11 +80,107 @@
 				<a href = "https://us.sagepub.com/en-us/nam"><img class = "sponsor" src = "sage.png" alt = "Sage Publishing"></a>
 			</div>
 		</div>
+-->
+		<div class = "row">
+			<img class = "four columns confthumb" src = "photos/photo1.jpg" />
+			<img class = "four columns confthumb" src = "photos/photo2.jpg" />
+			<img class = "four columns confthumb" src = "photos/photo3.jpg" />
+		</div>
+		<div class = "row">
+			<img class = "four columns confthumb" src = "photos/photo4.jpg" />
+			<img class = "four columns confthumb" src = "photos/photo5.jpg" />
+			<img class = "four columns confthumb" src = "photos/photo6.jpg" />
+		</div>
+		<div class = "row">
+			<img class = "four columns confthumb" src = "photos/photo7.jpg" />
+			<img class = "four columns confthumb" src = "photos/photo8.jpg" />
+			<img class = "four columns confthumb" src = "photos/photo9.jpg" />
+		</div>
+		<div class = "row">
+			<img class = "four columns confthumb" src = "photos/photo10.jpg" />
+			<img class = "four columns confthumb" src = "photos/photo11.jpg" />
+			<img class = "four columns confthumb" src = "photos/photo12.jpg" />
+		</div>
+		<div class = "row">
+			<img class = "four columns confthumb" src = "photos/photo13.jpg" />
+			<img class = "four columns confthumb" src = "photos/photo14.jpg" />
+			<img class = "four columns confthumb" src = "photos/photo15.jpg" />
+		</div>
+		<div class = "row">
+			<img class = "four columns confthumb" src = "photos/photo16.jpg" />
+			<img class = "four columns confthumb" src = "photos/photo17.jpg" />
+			<img class = "four columns confthumb" src = "photos/photo18.jpg" />
+		</div>
+		<div class = "row">
+			<img class = "four columns confthumb" src = "photos/photo19.jpg" />
+			<img class = "four columns confthumb" src = "photos/photo20.jpg" />
+			<img class = "four columns confthumb" src = "photos/photo21.jpg" />
+		</div>
+		<div class = "row">
+			<img class = "four columns confthumb" src = "photos/photo22.jpg" />
+			<img class = "four columns confthumb" src = "photos/photo23.jpg" />
+			<img class = "four columns confthumb" src = "photos/photo24.jpg" />
+		</div>
+		<div class = "row">
+			<img class = "four columns confthumb" src = "photos/photo25.jpg" />
+			<img class = "four columns confthumb" src = "photos/photo26.jpg" />
+			<img class = "four columns confthumb" src = "photos/photo27.jpg" />
+		</div>
+		<div class = "row">
+			<img class = "four columns confthumb" src = "photos/photo28.jpg" />
+			<img class = "four columns confthumb" src = "photos/photo29.jpg" />
+			<img class = "four columns confthumb" src = "photos/photo30.jpg" />
+		</div>
+		<div class = "row">
+			<img class = "four columns confthumb" src = "photos/photo31.jpg" />
+			<img class = "four columns confthumb" src = "photos/photo32.jpg" />
+		</div>
+	</div>
+	
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
 
+	  <!-- The Close Button -->
+	  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+	  <!-- Modal Content (The Image) -->
+	  <img class="modal-content" id="img01">
+
+	  <!-- Modal Caption (Image Text) -->
+	  <div id="caption"></div>
 	</div>
 	
 	
+	<p>For any remaining questions about ISRE 2017, e-mail Josh Wondra at <a href="mailto:jdwondra@umich.edu">jdwondra@umich.edu</a> or Hillary Anger Elfenbein at <a href="mailto:helfenbein@wustl.edu">helfenbein@wustl.edu</a></p>
+	
+	
 </div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var imgs = document.getElementsByClassName('confthumb');
+var modalImg = document.getElementById("img01");
+
+function clicked() {
+	modal.style.display = 'block';
+	modalImg.src = this.src;
+}
+
+for(var i = 0; i < imgs.length; i++) {
+	imgs[i].onclick = clicked;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
 
 	<footer>
 		<p>&copy; <a href = "http://www.isre.org">International Society for Research on Emotion</a>, 2016-2017</p>
